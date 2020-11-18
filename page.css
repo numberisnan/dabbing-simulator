@@ -1,0 +1,99 @@
+@font-face {
+	font-family: PoiretOne;
+	src: url('Fonts/poiretone.ttf');
+}
+html {
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	display: block;
+	background-color: black;
+}
+body {
+	transition: background-color 0.3s cubic-bezier(0.48, 1.16, 0, 1.48);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.title {
+	font-family: PoiretOne, cursive;
+	text-align: center;
+	letter-spacing: 1.1em;
+	color: rgba(256,256,256,0.8);
+	font-size: 30px;
+	margin-top: 2%;
+}
+.dabframe {
+	margin: 4% auto 2% auto;
+	width: 331px;
+	background-color: rgba(256,256,256,0.8);
+	padding: 3px;
+	border-radius: 6px;
+	zoom: 2.3;
+}
+#imgcontainer {
+	margin: auto;
+	width: 323px;
+	height: 182px;
+	border: grey 2px solid;
+	border-radius: 6px;
+}
+.dab {
+	background-color: orange;
+}
+.background {
+	margin: none;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 0.3s;
+}
+.o {
+	background-color: orange;
+}
+.p {
+	background-color: purple;
+}
+.fullscreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.credits {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family: monospace;
+	font-size: 24px;
+	color: rgba(256,256,256,0.7);
+	text-align: center;
+}
+@media screen and (max-height: 615px), screen and (max-width: 830px) {
+	.credits {
+		font-size: 15px;
+		opacity: 0.4;
+	}
+	.title {
+        font-size: 20px;
+    }
+	.dabframe {
+		zoom: 1.7;
+	}
+}
+@media screen and (max-width: 630px), screen and (max-height: 450px) {
+	.credits {
+		font-size: 12px;
+		opacity: 0.4;
+	}
+	.title {
+        font-size: 14px;
+    }
+	.dabframe {
+		zoom: 1.3;
+	}
+}
